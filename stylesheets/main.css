@@ -1,0 +1,16 @@
+body {
+  background-color: #f5f5ff;
+}
+/*
+  h1 will always be aligned centered 
+*/
+h1 {
+  text-align: center;
+}
+p {
+  /*
+    makes all p tags the size of 24px along with making it center 
+  */
+  font-size: 24px;
+  text-align: center;
+}
