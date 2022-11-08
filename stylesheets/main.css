@@ -1,5 +1,5 @@
 body {
-  background-color: #f5f5ff;
+  background-color: #d4efdf;
 }
 /*
   h1 will always be aligned centered 
@@ -12,5 +12,19 @@ p {
     makes all p tags the size of 24px along with making it center 
   */
   font-size: 24px;
+  text-align: center;
+  border: 3px solid black;
+  margin-left: 35%;
+  margin-right: 5%;
+  padding: 2%;
+  border-radius: 4px;
+}
+.treaty-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+h2 {
   text-align: center;
 }
