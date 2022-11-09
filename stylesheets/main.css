@@ -38,3 +38,41 @@ p {
 h2 {
   text-align: center;
 }
+/*
+  this makes it so if a website doesnt have the font Georgia it will go to time new roman and so on
+*/
+#style-by-id {
+  font-family: Georgia, "Times New Roman", Cambria, serif;
+}
+/*
+  this makes it so all span tags used will have an underline to them
+*/
+span {
+  text-decoration: underline;
+}
+/*
+  this will make it have a display of inline blocks have a margin of 5px
+  and have a font size of 30px and have some padding to it
+*/
+nav li {
+  display: inline-block;
+  margin: 5px;
+  font-size: 30px;
+  padding: 2px;
+}
+/*
+  any nav links will have a margin of 4px and have a black box around it with padding of 4px
+*/
+.nav-link {
+  margin: 4px;
+  border: 2px solid black;
+  padding: 4px;
+}
+/* this will make any class with video have to go left */
+.video {
+  float: left;
+}
+/* this makes the footer stay at the bottem of the page*/
+footer {
+  clear: both;
+}
