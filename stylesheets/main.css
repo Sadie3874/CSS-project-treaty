@@ -1,3 +1,4 @@
+/*makes the whole website the background color light green */
 body {
   background-color: #d4efdf;
 }
@@ -9,7 +10,10 @@ h1 {
 }
 p {
   /*
-    makes all p tags the size of 24px along with making it center 
+    makes all p tags the size of 24px along with making it center.
+    it also makes the boarder of the paragraph tags that will also have a black boarder surrounding it
+    both margin right and left make it so the pargraph has space, and have a padding of 2%, the padding makes it so 
+    you have space inbetween the text and the boarder. and the boarder has a radius of 4px   
   */
   font-size: 24px;
   text-align: center;
@@ -19,12 +23,18 @@ p {
   padding: 2%;
   border-radius: 4px;
 }
+/*
+  treaty-center makes it so the image would be center.
+*/
 .treaty-center {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
+/*
+  this makes it so all h2 will be center through all web pages 
+*/
 h2 {
   text-align: center;
 }
