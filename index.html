@@ -21,13 +21,19 @@
         float: right;
         border: 2px solid black;
       }
+      .color-black {
+        color: black;
+      }
+      #styled-by-id {
+        font-style: italic;
+      }
     </style>
   </head>
 
   <body>
     <main>
       <h1>Treaty 3 of Protection and preservation</h1>
-      <h2>
+      <h2 class="color-black">
         By: Sadie Cutts,<span>Web development </span> Course taught by:
         <span>Mr. Hardman.</span> Last edited 11/9/2022
       </h2>
@@ -81,7 +87,11 @@
         </p>
       </div>
       <div>
-        <h2 style="text-align: left; font-size: 40px; text-decoration: underline">Video</h2>
+        <h2
+          style="text-align: left; font-size: 40px; text-decoration: underline"
+          class="color-black">
+          Video
+        </h2>
         <img
           src="image/treaty 3 logo.jpg"
           width="500px"
@@ -90,8 +100,8 @@
           class="floated-right" />
 
         <iframe
-          width="500"
-          height="315"
+          width="650"
+          height="415"
           src="https://www.youtube.com/embed/I5rHJzenBds"
           title="Health Transformation for Treaty 3"
           frameborder="1"
@@ -102,7 +112,9 @@
     </main>
   </body>
   <footer>
-    <h2 style="text-align: left; text-decoration: underline; font-style: italic">References</h2>
+    <h2 style="text-align: left; text-decoration: underline; color: black" id="styled-by-id">
+      References
+    </h2>
     <nav>
       <li><a href="http://gct3.ca/land/" class="nav-link">Grand Council Treaty 3 </a></li>
       <li><a href="http://gct3.ca/our-nation/" class="nav-link">Grand Council Treaty 3 </a></li>
