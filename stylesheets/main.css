@@ -1,12 +1,15 @@
 /*makes the whole website the background color light green */
 body {
-  background-color: #d4efdf;
+  background-color: #293b22;
 }
 /*
   h1 will always be aligned centered 
 */
 h1 {
   text-align: center;
+  color: #f9e9a1;
+  font-weight: 600;
+  font-size: 3rem;
 }
 p {
   /*
@@ -15,13 +18,15 @@ p {
     both margin right and left make it so the pargraph has space, and have a padding of 2%, the padding makes it so 
     you have space inbetween the text and the boarder. and the boarder has a radius of 4px   
   */
-  font-size: 24px;
+  font-size: 1.4rem;
   text-align: center;
-  border: 3px solid black;
+  border: 3px solid #809249;
   margin-left: 35%;
   margin-right: 5%;
   padding: 2%;
   border-radius: 4px;
+  color: #e3c472;
+  word-spacing: 1.2mm;
 }
 /*
   treaty-center makes it so the image would be center.
@@ -37,7 +42,10 @@ p {
 */
 h2 {
   text-align: center;
-  color: #f08fe8;
+  color: #eed6c4;
+  font-weight: 300;
+  font-size: 2rem;
+  font: bold;
 }
 /*
   this makes it so if a website doesnt have the font Georgia it will go to time new roman and so on
@@ -50,6 +58,7 @@ h2 {
 */
 span {
   text-decoration: underline;
+  font: italic;
 }
 /*
   this will make it have a display of inline blocks have a margin of 5px
