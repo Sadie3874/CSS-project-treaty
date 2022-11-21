@@ -11,6 +11,9 @@ h1 {
   font-weight: 600;
   font-size: 3rem;
 }
+a {
+  color: #f9e9a1;
+}
 p {
   /*
     makes all p tags the size of 24px along with making it center.
@@ -75,8 +78,9 @@ nav li {
 */
 .nav-link {
   margin: 4px;
-  border: 2px solid black;
+  border: 2px solid #809249;
   padding: 4px;
+  font-size: 2.4rem;
 }
 /* this will make any class with video have to go left */
 .video {
@@ -85,4 +89,8 @@ nav li {
 /* this makes the footer stay at the bottem of the page*/
 footer {
   clear: both;
+}
+.floated-left {
+  float: left;
+  border: 2px solid black;
 }
