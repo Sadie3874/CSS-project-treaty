@@ -7,9 +7,50 @@
     <link rel="stylesheet" href="stylesheets/main.css" />
     <title>Treaty 3</title>
   </head>
+  <style>
+    /*
+      these are the styling for the images and iframes, .floated-left makes it so all the
+      images with a class of floated-left will display on the left side of the screen and will 
+      have a boarder of 2px and have a black bloarder too. and the same is 
+      for the iframe, it will display left and also have a block display. the same is for .floated right.
+      .color-back will color anything with this class to display the text in black. and styled by id 
+      is any text with the class of it will be styled italic 
+    */
+    .floated-left {
+      float: left;
+      border: 2px solid black;
+    }
+    .floated-right {
+      float: right;
+      border: 2px solid black;
+    }
+    .color-black {
+      color: #eed6c4;
+    }
+    #styled-by-id {
+      font-style: italic;
+    }
+    .odd-sections {
+      display: inline-block;
+
+      padding: 20px 10px;
+
+      background-color: whitesmoke;
+      width: 100%;
+    }
+    .odd-sections h2 {
+      color: black;
+      font-size: 2.4rem;
+      font-weight: 600;
+    }
+
+    .odd-sections p {
+      color: black;
+    }
+  </style>
   <body>
     <main>
-      <h1>About Treaty 3</h1>
+      <h1>Treaty 3</h1>
       <h2 class="color-black">
         By: Sadie Cutts,<span>Web development </span> Course taught by:
         <span>Mr. Hardman.</span> Last edited 11/21/2022
@@ -21,18 +62,20 @@
           </li>
         </ul>
       </nav>
-      <img
-        src="image/treaty 3 logo.jpg"
-        width="500px"
-        height="400px"
-        alt="The logo of the Grand Council Treaty #3 of the anishinaabe nation, the logo lis a bright light blue circle fading into a sky blue color, in the middle of the circle their tadditional head dress and pipe "
-        class="floated-left" />
-      <h2>What is treaty 3?</h2>
-      <p>
-        Treaty 3 was created in 1873, because the british wanted a route form Fort Garry and Fort
-        William, Cheif Mikiseesis who is also known as Little Eagle agreeed with Queen Victoria on
-        behalf of the Ojibwe Nations
-      </p>
+      <section class="odd-sections">
+        <img
+          src="image/treaty 3 logo.jpg"
+          width="500px"
+          height="400px"
+          alt="The logo of the Grand Council Treaty #3 of the anishinaabe nation, the logo lis a bright light blue circle fading into a sky blue color, in the middle of the circle their tadditional head dress and pipe "
+          class="floated-left" />
+        <h2>What is treaty 3?</h2>
+        <p>
+          Treaty 3 was created in 1873, because the british wanted a route form Fort Garry and Fort
+          William, Cheif Mikiseesis who is also known as Little Eagle agreeed with Queen Victoria on
+          behalf of the Ojibwe Nations
+        </p>
+      </section>
 
       <h2>Where is Treaty 3</h2>
       <p>

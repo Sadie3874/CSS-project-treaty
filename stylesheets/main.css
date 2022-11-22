@@ -1,6 +1,7 @@
 /*makes the whole website the background color light green */
 body {
   background-color: #293b22;
+  margin: 0px;
 }
 /*
   h1 will always be aligned centered 
