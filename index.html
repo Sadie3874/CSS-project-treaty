@@ -16,6 +16,9 @@
       .color-back will color anything with this class to display the text in black. and styled by id 
       is any text with the class of it will be styled italic 
     */
+    .color-black {
+      color: #594545;
+    }
     .floated-left {
       float: left;
       border: 2px solid black;
@@ -24,9 +27,7 @@
       float: right;
       border: 2px solid black;
     }
-    .color-black {
-      color: #eed6c4;
-    }
+
     #styled-by-id {
       font-style: italic;
     }
@@ -43,17 +44,13 @@
       font-size: 2.4rem;
       font-weight: 600;
     }
-
-    .odd-sections p {
-      color: black;
-    }
   </style>
   <body>
     <main>
       <h1>Treaty 3</h1>
       <h2 class="color-black">
         By: Sadie Cutts,<span>Web development </span> Course taught by:
-        <span>Mr. Hardman.</span> Last edited 11/21/2022
+        <span>Mr. Hardman.</span> Last edited 11/29/2022
       </h2>
       <nav>
         <ul>
@@ -62,20 +59,22 @@
           </li>
         </ul>
       </nav>
-      <section class="odd-sections">
-        <img
-          src="image/treaty 3 logo.jpg"
-          width="500px"
-          height="400px"
-          alt="The logo of the Grand Council Treaty #3 of the anishinaabe nation, the logo lis a bright light blue circle fading into a sky blue color, in the middle of the circle their tadditional head dress and pipe "
-          class="floated-left" />
-        <h2>What is treaty 3?</h2>
-        <p>
-          Treaty 3 was created in 1873, because the british wanted a route form Fort Garry and Fort
-          William, Cheif Mikiseesis who is also known as Little Eagle agreeed with Queen Victoria on
-          behalf of the Ojibwe Nations
-        </p>
-      </section>
+
+      <!--
+          images that will display on the left cause it has a class of floated left.
+        -->
+      <img
+        src="image/treaty 3 logo.jpg"
+        width="500px"
+        height="400px"
+        alt="The logo of the Grand Council Treaty #3 of the anishinaabe nation, the logo lis a bright light blue circle fading into a sky blue color, in the middle of the circle their tadditional head dress and pipe "
+        class="floated-left" />
+      <h2>What is treaty 3?</h2>
+      <p>
+        Treaty 3 was signed on October 3 1873 at the North West Angle of Lake of the Woods, because
+        the british wanted a route form Fort Garry and Fort William, Cheif Mikiseesis who is also
+        known as Little Eagle agreeed with Queen Victoria on behalf of the Ojibwe Nations
+      </p>
 
       <h2>Where is Treaty 3</h2>
       <p>
@@ -104,7 +103,7 @@
         -->
         <br />
         <br />
-
+        <br />
         <h2
           style="text-align: left; font-size: 40px; text-decoration: underline"
           class="color-black">
@@ -124,28 +123,29 @@
         </iframe>
       </div>
     </main>
-  </body>
-  <footer>
-    <h2 style="text-align: left; text-decoration: underline; color: #eed6c4" id="styled-by-id">
-      References
-    </h2>
-    <nav>
+    <footer>
+      <h2
+        style="text-align: left; color: #815b5b; text-align: center; font-weight: 800"
+        id="styled-by-id">
+        References
+      </h2>
+      <hr style="color: #594545; border: 2px solid" />
+      <ul>
+        <!--
+          links for references that will display the links in boxes 
+        -->
+        <li><a href="http://gct3.ca/land/" class="nav-link">Grand Council Treaty 3 </a></li>
+        <li><a href="http://gct3.ca/our-nation/" class="nav-link">Grand Council Treaty 3 </a></li>
+        <li>
+          <a href="https://www.thecanadianencyclopedia.ca/en/article/treaty-3 " class="nav-link"
+            >Canadian Encyclopedia
+          </a>
+        </li>
+      </ul>
       <!--
-        links for references that will display the links in boxes 
+        my copy right symbol 
       -->
-      <li><a href="http://gct3.ca/land/" class="nav-link">Grand Council Treaty 3 </a></li>
-      <li><a href="http://gct3.ca/our-nation/" class="nav-link">Grand Council Treaty 3 </a></li>
-      <li>
-        <a href="https://www.thecanadianencyclopedia.ca/en/article/treaty-3 " class="nav-link"
-          >Canadian Encyclopedia
-        </a>
-      </li>
-    </nav>
-    <!--
-      my copy right symbol 
-    -->
-    <p style="text-align: left; margin-right: 80%; margin-left: 0%; padding: 1%">
-      &#169; 2022 Sadie Cutts
-    </p>
-  </footer>
+      <p style="text-align: center; margin-left: 2px; margin-right: 2px">&#169; 2022 Sadie Cutts</p>
+    </footer>
+  </body>
 </html>

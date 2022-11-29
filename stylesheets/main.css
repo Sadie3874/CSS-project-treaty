@@ -1,6 +1,6 @@
 /*makes the whole website the background color light green */
 body {
-  background-color: #293b22;
+  background-color: #fefcf3;
   margin: 0px;
 }
 /*
@@ -8,12 +8,23 @@ body {
 */
 h1 {
   text-align: center;
-  color: #f9e9a1;
+  color: #9e7676;
   font-weight: 600;
   font-size: 3rem;
 }
+h2 {
+  text-align: center;
+  color: #815b5b;
+  font-weight: 300;
+  font-size: 2rem;
+  font: bold;
+}
+ul {
+  list-style-type: none;
+  text-align: center;
+}
 a {
-  color: #f9e9a1;
+  color: #9e7676;
 }
 p {
   /*
@@ -25,12 +36,14 @@ p {
   font-size: 1.4rem;
   text-align: center;
   border: 3px solid #809249;
+  margin-top: 2px;
   margin-left: 35%;
   margin-right: 5%;
-  padding: 2%;
+  padding: 3%;
   border-radius: 4px;
-  color: #e3c472;
+  color: black;
   word-spacing: 1.2mm;
+  background-color: white;
 }
 /*
   treaty-center makes it so the image would be center.
@@ -44,13 +57,7 @@ p {
 /*
   this makes it so all h2 will be center through all web pages and will have a font color that is pink 
 */
-h2 {
-  text-align: center;
-  color: #eed6c4;
-  font-weight: 300;
-  font-size: 2rem;
-  font: bold;
-}
+
 /*
   this makes it so if a website doesnt have the font Georgia it will go to time new roman and so on
 */
@@ -81,15 +88,24 @@ nav li {
   margin: 4px;
   border: 2px solid #809249;
   padding: 4px;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
+  background-color: white;
 }
 /* this will make any class with video have to go left */
 .video {
   float: left;
+  margin: 4px;
+  border: 2px solid black;
 }
+
+div {
+  display: inline-block;
+}
+
 /* this makes the footer stay at the bottem of the page*/
 footer {
   clear: both;
+  margin-top: 50px;
 }
 .floated-left {
   float: left;
