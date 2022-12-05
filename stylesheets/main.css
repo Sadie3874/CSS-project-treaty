@@ -4,7 +4,11 @@ body {
   margin: 0px;
 }
 /*
-  h1 will always be aligned centered 
+  this will style all h1 if they dont have internal or inline styling.
+  the text will be in the center
+  the text will be colored #9e7676 
+  the text will be bolded to 600 
+  and the size of the text will be 3 rem which is 48px 
 */
 h1 {
   text-align: center;
@@ -12,26 +16,43 @@ h1 {
   font-weight: 600;
   font-size: 3rem;
 }
+/*
+  this will style all h2 is they dont have internal or inline styling
+  this will have all text to be centered 
+  the text will also be colored #815b5b (very light maroon)
+  the text will be bolded a little bit. only 400 
+  the font size is 2rem which is 32px
+*/
 h2 {
   text-align: center;
   color: #815b5b;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 2rem;
-  font: bold;
 }
+/* this will make all un ordered lists to not have any bullit points, dashes etc.
+  it will also make all the text to be center in the element.
+*/
 ul {
   list-style-type: none;
   text-align: center;
 }
+/* all a href tags will be colored #9e7676 */
 a {
   color: #9e7676;
 }
 p {
   /*
-    makes all p tags the size of 24px along with making it center.
-    it also makes the boarder of the paragraph tags that will also have a black boarder surrounding it
-    both margin right and left make it so the pargraph has space, and have a padding of 2%, the padding makes it so 
-    you have space inbetween the text and the boarder. and the boarder has a radius of 4px   
+    this will style all paragrph tags if they have no internal or inline styles. 
+    the font size of the p tags will be 1.4rem which is the same as 14px.
+    all the text will be aligned to the center of the element. 
+    it will have a border of 3px and will be green 
+    the element will have 2px of margin to the top of the element.
+    the element will also have a margin to the left as 35% and to the right of 5% so it will be displayed to the right of the website
+    the element will have a padding of 3% surrounding all the text inside the element 
+    the element will border redius of 4px, so it will round all borders of the element 
+    the text if the element will be black 
+    all the elements words will be 1.2mm apart so it is easier to read. 
+    the background of the element will be white so it can be read easier. 
   */
   font-size: 1.4rem;
   text-align: center;
@@ -46,17 +67,15 @@ p {
   background-color: white;
 }
 /*
-  treaty-center makes it so the image would be center.
+  this will style any elements with the class treaty-center 
+  it has the margin left and right auto so it is centered 
+  and the width of the element has a width of 50% of the element 
 */
 .treaty-center {
-  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
-/*
-  this makes it so all h2 will be center through all web pages and will have a font color that is pink 
-*/
 
 /*
   this makes it so if a website doesnt have the font Georgia it will go to time new roman and so on
@@ -65,15 +84,18 @@ p {
   font-family: Georgia, "Times New Roman", Cambria, serif;
 }
 /*
-  this makes it so all span tags used will have an underline to them
+ this styles all span elements to have an underline and be italic 
 */
 span {
   text-decoration: underline;
   font: italic;
 }
 /*
-  this will make it have a display of inline blocks have a margin of 5px
-  and have a font size of 30px and have some padding to it
+  this will style all elements in the nav to display so it has a block around it 
+  and have a margin of the block to be 5px 
+  the font size of the text to be 30px 
+  the padding of the element will be 2px
+
 */
 nav li {
   display: inline-block;
@@ -82,7 +104,9 @@ nav li {
   padding: 2px;
 }
 /*
-  any nav links will have a margin of 4px and have a black box around it with padding of 4px
+  this will style all elements with this class to have a CSS box. 
+  it will have a margin of 4px 
+
 */
 .nav-link {
   margin: 4px;
@@ -92,21 +116,18 @@ nav li {
   background-color: white;
 }
 /* this will make any class with video have to go left */
-.video {
-  float: left;
-  margin: 4px;
-  border: 2px solid black;
-}
 
 div {
   display: inline-block;
 }
 
-/* this makes the footer stay at the bottem of the page*/
+/* this makes the footer stay futher away from the video at the bottem of the page */
 footer {
   clear: both;
   margin-top: 50px;
 }
+
+/* this will style any elements that have this class to float left and have a border of 2px and black */
 .floated-left {
   float: left;
   border: 2px solid black;
