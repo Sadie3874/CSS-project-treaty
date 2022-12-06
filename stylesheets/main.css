@@ -91,7 +91,8 @@ span {
   font: italic;
 }
 /*
-  this will style all elements in the nav to display so it has a block around it 
+  this will style all list item elements in the nav to display so it has a block around it,
+  but also display inline with other list item elements 
   and have a margin of the block to be 5px 
   the font size of the text to be 30px 
   the padding of the element will be 2px
@@ -106,6 +107,10 @@ nav li {
 /*
   this will style all elements with this class to have a CSS box. 
   it will have a margin of 4px 
+  and the border will be green and it is all around all the elements in the box
+  the padding from the inner content at is will ve 4px away from the conent inside 
+  the font size of all the content for text will be 1.8rem
+  the background color of it will be white to have the user read it better 
 
 */
 .nav-link {
@@ -115,7 +120,7 @@ nav li {
   font-size: 1.8rem;
   background-color: white;
 }
-/* this will make any class with video have to go left */
+/* stays in the same line as the code  */
 
 div {
   display: inline-block;
