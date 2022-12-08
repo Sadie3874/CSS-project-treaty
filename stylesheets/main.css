@@ -1,6 +1,5 @@
 /*makes the whole website the background color light green */
 * {
-  background-color: #fefcf3;
   margin: 0px;
 }
 /*
@@ -10,6 +9,9 @@
   the text will be bolded to 600 
   and the size of the text will be 3 rem which is 48px 
 */
+header {
+  background-color: #815b5b;
+}
 h1 {
   text-align: center;
   color: #fefcf3;
@@ -25,11 +27,11 @@ h1 {
   the padding of the element will be 2px
 
 */
+nav ul {
+  padding: 0;
+}
 nav li {
   display: inline-block;
-  margin: 5px;
-  font-size: 30px;
-  padding: 2px;
 }
 /*
   this will style all elements with this class to have a CSS box. 
@@ -43,9 +45,15 @@ nav li {
 .nav-link {
   margin: 4px;
   border: 2px solid #809249;
-  padding: 4px;
+
   font-size: 1.8rem;
+  background-color: #815b5b;
+}
+nav li :focus,
+nav li :hover {
   background-color: white;
+  color: #815b5b;
+  border: white;
 }
 /*
   this will style all h2 is they dont have internal or inline styling
@@ -64,8 +72,14 @@ h2 {
   it will also make all the text to be center in the element.
 */
 ul {
+  margin-top: 30px;
+  margin-bottom: 30px;
+
   list-style-type: none;
   text-align: center;
+}
+li {
+  display: inline-block;
 }
 /* all a href tags will be colored #9e7676 */
 a {
@@ -131,11 +145,13 @@ div {
 /* this makes the footer stay futher away from the video at the bottem of the page */
 footer {
   clear: both;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 /* this will style any elements that have this class to float left and have a border of 2px and black */
 .floated-left {
+  color: #815b5b;
+
   float: left;
   border: 2px solid black;
 }
