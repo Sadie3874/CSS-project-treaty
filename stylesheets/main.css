@@ -1,6 +1,28 @@
+/*
+  Sadie Cutts
+  Web development
+  Mr. Hardman 
+  12/5/2022
+
+  color theory:
+
+
+  font family: I chose this font family beacuse the serif font family gives a trustworthy and traditional feel to it, it also 
+  looks more reliable and established. i chose this cause treaties are very serious and mean alot
+  to people so i wanted to go for a more serious feel but also have a trustworthy look to it too.  
+*/
+
 /*makes the whole website the background color light green */
 * {
   margin: 0px;
+}
+html {
+  font-size: 1rem;
+}
+/* this will style all the body elements. it also has my font family  */
+body {
+  font-family: Georgia, "Times New Roman", Cambria, serif;
+  font-size: 1.5rem;
 }
 /*
   this will style all h1 if they dont have internal or inline styling.
@@ -47,14 +69,14 @@ nav li {
   border: 2px solid #809249;
 
   font-size: 1.8rem;
-  background-color: #815b5b;
-}
-nav li :focus,
-nav li :hover {
   background-color: white;
-  color: #815b5b;
-  border: white;
 }
+/* 
+    nav li :focus,
+    nav li :hover {
+    background-color: #809249; 
+  */
+
 /*
   this will style all h2 is they dont have internal or inline styling
   this will have all text to be centered 
@@ -83,7 +105,7 @@ li {
 }
 /* all a href tags will be colored #9e7676 */
 a {
-  color: #9e7676;
+  color: #815b5b;
 }
 p {
   /*
@@ -123,7 +145,8 @@ p {
 }
 
 /*
-  this makes it so if a website doesnt have the font Georgia it will go to time new roman and so on
+  this makes it so if a website doesnt have the font Georgia it will go to time new roman and so on.
+  
 */
 #style-by-id {
   font-family: Georgia, "Times New Roman", Cambria, serif;
