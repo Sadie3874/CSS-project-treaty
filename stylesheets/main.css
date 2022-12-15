@@ -51,13 +51,15 @@ body {
   and the size of the text will be 3 rem which is 48px 
 */
 header {
+  display: inline-block;
+  width: 100%;
   background-color: #815b5b;
 }
 h1 {
   text-align: center;
   color: #fefcf3;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 3.8rem;
   background-color: #815b5b;
 }
 /*
@@ -85,7 +87,9 @@ nav li {
 */
 .nav-link {
   margin: 4px;
+  margin-right: 3px;
   border: 2px solid #809249;
+  padding: 4px;
 
   font-size: 1.8rem;
   background-color: white;
@@ -104,10 +108,12 @@ nav li {
   the font size is 2rem which is 32px
 */
 h2 {
+  margin-top: 3%;
   text-align: center;
   color: #815b5b;
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  font-style: italic;
 }
 /* this will make all un ordered lists to not have any bullit points, dashes etc.
   it will also make all the text to be center in the element.
@@ -147,6 +153,8 @@ p {
   margin-left: 35%;
   margin-right: 5%;
   padding: 3%;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
   border-radius: 4px;
   color: black;
   word-spacing: 1.2mm;
