@@ -1,3 +1,9 @@
+<!-- 
+  Sadie Cutts
+  Web development
+  Mr. Hardman 
+  12/5/2022
+-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,79 +14,58 @@
     <title>Treaty 3</title>
   </head>
   <style>
-    /*
-      these are the styling for the images and iframes, .floated-left makes it so all the
-      images with a class of floated-left will display on the left side of the screen and will 
-      have a boarder of 2px and have a black bloarder too. and the same is 
-      for the iframe, it will display left and also have a block display. the same is for .floated right.
-      .color-back will color anything with this class to display the text in black. and styled by id 
-      is any text with the class of it will be styled italic 
-    */
-    .floated-left {
-      float: left;
-      border: 2px solid black;
+    /* this will color any of the elements with the class of color will have the color of #594545  */
+    .color {
+      color: #594545;
     }
-    .floated-right {
-      float: right;
-      border: 2px solid black;
-    }
-    .color-black {
-      color: #eed6c4;
-    }
-    #styled-by-id {
+
+    /* this id will style any element to be italized  */
+    #footer-heading {
       font-style: italic;
     }
-    .odd-sections {
-      display: inline-block;
-
-      padding: 20px 10px;
-
-      background-color: whitesmoke;
-      width: 100%;
-    }
-    .odd-sections h2 {
-      color: black;
-      font-size: 2.4rem;
-      font-weight: 600;
-    }
-
-    .odd-sections p {
-      color: black;
+    /* this id will diplay the video at the end of the page to float left
+       and have a margin of 4px, so it is surrounding all the boxes and will have some space in between them.
+       the border of the box will also be black and be as wide as 2px. */
+    .video {
+      float: left;
+      margin: 4px;
+      border: 2px solid black;
     }
   </style>
+  <header>
+    <h1>Treaty 3 of Protection and Preservation</h1>
+    <nav>
+      <ul>
+        <li>
+          <a href="treaties.html" class="nav-link">About Treaties </a>
+          <a href="index.html" class="nav-link"> Treaty 3</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
   <body>
     <main>
-      <h1>Treaty 3</h1>
-      <h2 class="color-black">
-        By: Sadie Cutts,<span>Web development </span> Course taught by:
-        <span>Mr. Hardman.</span> Last edited 11/21/2022
-      </h2>
-      <nav>
-        <ul>
-          <li>
-            <a href="treaties.html" class="nav-link">About Treaties </a>
-          </li>
-        </ul>
-      </nav>
-      <section class="odd-sections">
-        <img
-          src="image/treaty 3 logo.jpg"
-          width="500px"
-          height="400px"
-          alt="The logo of the Grand Council Treaty #3 of the anishinaabe nation, the logo lis a bright light blue circle fading into a sky blue color, in the middle of the circle their tadditional head dress and pipe "
-          class="floated-left" />
-        <h2>What is treaty 3?</h2>
-        <p>
-          Treaty 3 was created in 1873, because the british wanted a route form Fort Garry and Fort
-          William, Cheif Mikiseesis who is also known as Little Eagle agreeed with Queen Victoria on
-          behalf of the Ojibwe Nations
-        </p>
-      </section>
+      <!--
+          images that will display on the left cause it has a class of floated left.
+        -->
+      <img
+        src="image/treaty 3 logo.jpg"
+        width="500px"
+        height="400px"
+        alt="The logo of the Grand Council Treaty #3 of the anishinaabe nation, the logo lis a bright light blue circle fading into a sky blue color, in the middle of the circle their tadditional head dress and pipe "
+        class="floated-left" />
+      <h2>What is Treaty 3?</h2>
+      <p>
+        Treaty 3 was signed on October 3 1873 at the North West Angle of Lake of the Woods, because
+        the british wanted a route form Fort Garry and Fort William, Cheif Mikiseesis who is also
+        known as Little Eagle agreeed with Queen Victoria on behalf of the Ojibwe Nations
+      </p>
 
       <h2>Where is Treaty 3</h2>
       <p>
-        Treaty 3 is located Eastern lower Canada and goes into Western ontraio, Treaty 3 is also
-        located on the Anishinaabe and Ojibwe land, and home to 28 Frist Nations communtiys.
+        Treaty 3 is located on the edge of Eastern lower Manitoba and goes into Western ontraio,
+        Treaty 3 is also located on the Anishinaabe and Ojibwe land, and home to 28 Frist Nations
+        communtiys.
       </p>
       <img
         src="image/treaty 3.png"
@@ -88,9 +73,9 @@
         height="400px"
         alt="A map of treaty 3 territoy, treaty 3 stretches out from the edge of manitoba to lower ontario"
         class="floated-left" />
-      <h2>Agreements in the treaty</h2>
+      <h2>Agreements in the Treaty</h2>
       <p>
-        Treaty 3 maintins all rights to water and land all though Manitoba and Ontario The Treay
+        Treaty 3 maintains all rights to water and land all though Manitoba and Ontario The Treaty
         also said that the British could build a railway through their land. The Indigenous People
         got 55,000 square miles and was shared with the british. Before the treaty was signed, the
         land was going to be the first-post confederation treaty, But the Anishinaabe people didnt
@@ -102,50 +87,64 @@
           this is my video tag, it has an inline style, the text will align on the left and it will have a font size of 40px
           and will also have an underline text decoration and it has a class of color black so it will display black
         -->
-        <br />
-        <br />
 
-        <h2
-          style="text-align: left; font-size: 40px; text-decoration: underline"
-          class="color-black">
+        <h2 style="text-align: center; font-size: 40px; text-decoration: underline" class="color">
           Video
         </h2>
         <!--
-          will display the video 
+          will display the video.
+          it will display a width of 650
+          and have a height of 415 
+          the src will let the user open the video 
+          i also named the title of the video so users will know what is it called  
+          it also has a class that will have it float left and have a border color of black and have a margin of 4px 
+          it will also have a border of 2px that is black  
         -->
         <iframe
           width="650"
           height="415"
           src="https://www.youtube.com/embed/I5rHJzenBds"
           title="Health Transformation for Treaty 3"
-          frameborder="1"
           class="video"
           allowfullscreen>
         </iframe>
       </div>
     </main>
-  </body>
-  <footer>
-    <h2 style="text-align: left; text-decoration: underline; color: #eed6c4" id="styled-by-id">
-      References
-    </h2>
-    <nav>
+    <footer>
       <!--
-        links for references that will display the links in boxes 
+        this is inline styling. this will style the referneces seperate then the code in the 
+        main CSS. this will align the text center and will color it #815b5b and it will be bolded 
       -->
-      <li><a href="http://gct3.ca/land/" class="nav-link">Grand Council Treaty 3 </a></li>
-      <li><a href="http://gct3.ca/our-nation/" class="nav-link">Grand Council Treaty 3 </a></li>
-      <li>
-        <a href="https://www.thecanadianencyclopedia.ca/en/article/treaty-3 " class="nav-link"
-          >Canadian Encyclopedia
-        </a>
-      </li>
-    </nav>
-    <!--
-      my copy right symbol 
-    -->
-    <p style="text-align: left; margin-right: 80%; margin-left: 0%; padding: 1%">
-      &#169; 2022 Sadie Cutts
-    </p>
-  </footer>
+      <h2 style="color: #815b5b; text-align: center; font-weight: 800" id="footer-heading">
+        References
+      </h2>
+      <hr style="color: #594545; border: 2px solid" />
+      <ul>
+        <!--
+          this is the references i used for the web page. they have a class that will style them to 
+          have a box around them with a white background and a green border around it   
+        -->
+        <li><a href="http://gct3.ca/our-nation/" class="nav-link">Grand Council Treaty 3 </a></li>
+        <li>
+          <a href="https://www.thecanadianencyclopedia.ca/en/article/treaty-3 " class="nav-link"
+            >Canadian Encyclopedia
+          </a>
+        </li>
+      </ul>
+      <!--
+         the copy right symbol will stop anyone from taking ownership of this website. it is styled 
+         with inline styling and displays center with a margin left and right of 2px.
+      -->
+      <p
+        style="
+          text-align: center;
+          margin-left: 2px;
+          margin-right: 2px;
+          padding-top: 30px;
+          padding-bottom: 30px;
+        ">
+        &#169; 2022 Sadie Cutts
+      </p>
+    </footer>
+  </body>
 </html>
