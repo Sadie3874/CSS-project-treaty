@@ -12,6 +12,13 @@ h1 {
   font-weight: 600;
   font-size: 3rem;
 }
+nav a:hover,
+nav a:focus {
+  color: #f9e9a1;
+}
+nav a:visited {
+  color: #eed6c4;
+}
 a {
   color: #f9e9a1;
 }
