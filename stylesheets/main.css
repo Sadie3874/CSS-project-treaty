@@ -109,6 +109,7 @@ nav li {
 */
 h2 {
   margin-top: 3%;
+
   text-align: center;
   color: #815b5b;
   font-weight: 400;
@@ -141,7 +142,9 @@ p {
     the element will also have a margin to the left as 35% and to the right of 5% so it will be displayed to the right of the website
     the element will have a padding of 3% surrounding all the text inside the element 
     the element will border redius of 4px, so it will round all borders of the element 
-    the text if the element will be black 
+    the text if the element will be black and it will display on webkit and moz too because some 
+    web broswers dont support this but by adding those it will display like that so it doesnt
+    take any accessabilty or any info from the website. 
     all the elements words will be 1.2mm apart so it is easier to read. 
     the background of the element will be white so it can be read easier. 
   */
@@ -149,8 +152,8 @@ p {
   text-align: center;
   border: 3px solid #809249;
   margin-top: 2px;
-  margin-left: 35%;
-  margin-right: 5%;
+  margin-left: 45%;
+  margin-right: 3%;
   padding: 3%;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -172,17 +175,18 @@ p {
 
 /*
   this makes it so if a website doesnt have the font Georgia it will go to time new roman and so on.
-  
+  reasons for font family, top of page ^
 */
 #style-by-id {
   font-family: Georgia, "Times New Roman", Cambria, serif;
 }
 /*
- this styles all span elements to have an underline and be italic 
+ this styles all span elements to have an underline 
+ this will highlight it better cause i would like to have the users 
+ attention their.  
 */
 span {
   text-decoration: underline;
-  font: italic;
 }
 
 /* stays in the same line as the code  */
@@ -197,7 +201,8 @@ footer {
   margin-top: 30px;
 }
 
-/* this will style any elements that have this class to float left and have a border of 2px and black */
+/* this will style any elements that have this class to float left on the website
+ and have a border of 2px and black */
 .floated-left {
   color: #815b5b;
 
