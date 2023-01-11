@@ -2,7 +2,7 @@
   Sadie Cutts
   Web development
   Mr. Hardman 
-  1/5/2023
+  1/11/2023
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -12,38 +12,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="stylesheets/main.css" />
     <title>Videos</title>
-    <style></style>
+    <style>
+      .align {
+        display: inline;
+      }
+    </style>
   </head>
-  <header>
-    <!--
-      this is the first thing that displays on my website. 
-    -->
-    <h1>Treaty 3 of Protection and Preservation</h1>
-    <section>
-      <nav>
-        <ul>
-          <li>
-            <a href="index.html" class="nav-link">Treaty 3</a>
-            <a href="treaties.html" class="nav-link">About Treaties </a>
-            <a href="videos.html" class="nav-link">Videos</a>
-          </li>
-        </ul>
-      </nav>
-    </section>
-  </header>
+
   <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html" class="nav-link">Treaty 3</a>
+          <a href="treaties.html" class="nav-link">About Treaties </a>
+          <a href="videos.html" class="nav-link">Videos</a>
+        </li>
+      </ul>
+    </nav>
+
+    <header>
+      <h1>Treaty 3 of Protection and Preservation</h1>
+    </header>
     <main>
       <section>
-        <div>
-          <!--
+        <!--
           this is my video tag, it has an inline style, the text will align on the left and it will have a font size of 40px
           and will also have an underline text decoration and it has a class of color black so it will display black
         -->
 
-          <h2 style="text-align: center; font-size: 40px; text-decoration: underline" class="color">
-            Video
-          </h2>
-          <!--
+        <h2 style="text-align: center; font-size: 40px; text-decoration: underline" class="color">
+          Video
+        </h2>
+        <!--
           will display the video.
           it will display a width of 650
           and have a height of 415 
@@ -52,55 +52,52 @@
           it also has a class that will have it float left and have a border color of black and have a margin of 4px 
           it will also have a border of 2px that is black  
         -->
-          <iframe
-            width="650"
-            height="415"
-            src="https://www.youtube.com/embed/I5rHJzenBds"
-            title="Health Transformation for Treaty 3"
-            class="video"
-            allowfullscreen>
-          </iframe>
-        </div>
+        <iframe
+          width="650"
+          height="415"
+          src="https://www.youtube.com/embed/I5rHJzenBds"
+          title="Health Transformation for Treaty 3"
+          class="video"
+          allowfullscreen>
+        </iframe>
       </section>
-      <section>
-        <footer>
-          <h2 style="color: #815b5b; text-align: center; font-weight: 800" id="footer-heading">
-            References
-          </h2>
-          <hr style="color: #594545; border: 2px solid" />
-          <ul>
-            <!--
+    </main>
+    <footer>
+      <h2 style="color: #815b5b; text-align: center; font-weight: 800" id="footer-heading">
+        References
+      </h2>
+      <hr style="color: #594545; border: 2px solid" />
+      <ul>
+        <!--
           this is the references i used for the web page. they have a class that will style them to 
           have a box around them with a white background and a green border around it   
         -->
-            <li>
-              <a href="http://gct3.ca/our-nation/" class="nav-link">Grand Council Treaty 3 </a>
-            </li>
-            <li>
-              <a href="https://www.thecanadianencyclopedia.ca/en/article/treaty-3 " class="nav-link"
-                >Treaty 3-Canadian Encyclopedia
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.thecanadianencyclopedia.ca/en/article/numbered-treaties"
-                class="nav-link"
-                >Numbered Treaties-Canadian Encyclopedia
-              </a>
-            </li>
-          </ul>
-          <p
-            style="
-              text-align: center;
-              margin-left: 2px;
-              margin-right: 2px;
-              padding-top: 30px;
-              padding-bottom: 30px;
-            ">
-            &#169; 2022 Sadie Cutts
-          </p>
-        </footer>
-      </section>
-    </main>
+        <li>
+          <a href="http://gct3.ca/our-nation/" class="nav-link">Grand Council Treaty 3 </a>
+        </li>
+        <li>
+          <a href="https://www.thecanadianencyclopedia.ca/en/article/treaty-3 " class="nav-link"
+            >Treaty 3-Canadian Encyclopedia
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.thecanadianencyclopedia.ca/en/article/numbered-treaties"
+            class="nav-link"
+            >Numbered Treaties-Canadian Encyclopedia
+          </a>
+        </li>
+      </ul>
+      <p
+        style="
+          text-align: center;
+          margin-left: 2px;
+          margin-right: 2px;
+          padding-top: 30px;
+          padding-bottom: 30px;
+        ">
+        &#169; 2022 Sadie Cutts
+      </p>
+    </footer>
   </body>
 </html>
