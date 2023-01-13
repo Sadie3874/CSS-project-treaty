@@ -2,7 +2,7 @@
   Sadie Cutts
   Web development
   Mr. Hardman 
-  1/11/2023
+  1/13/2023
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -16,17 +16,20 @@
       .align {
         display: inline;
       }
+      #middle {
+        margin-left: 40%;
+      }
     </style>
   </head>
 
   <body>
     <nav>
       <ul>
-        <li>
-          <a href="index.html" class="nav-link">Treaty 3</a>
-          <a href="treaties.html" class="nav-link">About Treaties </a>
-          <a href="videos.html" class="nav-link">Videos</a>
-        </li>
+        <ul>
+          <li class="nav-link"><a href="index.html"> Treaty 3</a></li>
+          <li class="nav-link"><a href="treaties.html">About Treaties </a></li>
+          <li class="nav-link"><a href="videos.html">Videos</a></li>
+        </ul>
       </ul>
     </nav>
 
@@ -49,7 +52,7 @@
           class="floated-left" />
 
         <div class="align">
-          <h2>What is a Treaty?</h2>
+          <h2 id="middle">What is a Treaty?</h2>
 
           <p>
             A treaty is an agreement between nations, In Canada it is an agreement between the
@@ -61,7 +64,7 @@
       </section>
 
       <section>
-        <h2>The numbered Treaties</h2>
+        <h2 id="middle">The Numbered Treaties</h2>
         <p>
           The numbered treaties are 11 treaties that stretch from Ontario to British Columbia. The
           numbered Treaties are agreements between the Indigenous peoples and the Crown. The
@@ -70,8 +73,16 @@
         </p>
       </section>
 
+      <img
+        src="image/Treaty-medal-web.jpg"
+        width="550px"
+        height="400px"
+        alt="the metals to commemorate the agreements in the treaties, this image shows a 
+        British man and a indigenous leader shaking hands in front of a setting (or rising run) with teepees in the background. "
+        class="floated-left" />
+
       <section>
-        <h2>Points of View</h2>
+        <h2 id="middle">Points of View</h2>
         <p>
           An important thing to know is that the Crown and the Indigenous people viewed Treaties
           very differently, to the Indigenous people they saw the treaties as an agreement between

@@ -2,7 +2,7 @@
   Sadie Cutts
   Web development
   Mr. Hardman 
-  1/11/2023
+  1/13/2023
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -15,13 +15,14 @@
     <style>
       figure {
         display: inline-block;
-        width: 40%;
+        width: 45%;
       }
       .align {
         display: inline;
       }
       .video {
         text-align: center;
+        margin-left: 30px;
       }
     </style>
   </head>
@@ -29,11 +30,11 @@
   <body>
     <nav>
       <ul>
-        <li>
-          <a href="index.html" class="nav-link">Treaty 3</a>
-          <a href="treaties.html" class="nav-link">About Treaties </a>
-          <a href="videos.html" class="nav-link">Videos</a>
-        </li>
+        <ul>
+          <li class="nav-link"><a href="index.html"> Treaty 3</a></li>
+          <li class="nav-link"><a href="treaties.html">About Treaties </a></li>
+          <li class="nav-link"><a href="videos.html">Videos</a></li>
+        </ul>
       </ul>
     </nav>
 
@@ -93,23 +94,38 @@
             </iframe>
           </figure>
 
-          <iframe
-            width="650"
-            height="415"
-            src="https://www.youtube.com/embed/ju-Zx2kDiGQ"
-            title="YouTube video about MMIWG awareness for Youth by Youth "
-            allowfullscreen
-            class="video">
-          </iframe>
-
-          <iframe
-            width="650"
-            height="415"
-            src="https://www.youtube.com/embed/VpIr9eAnTLw"
-            title="YouTube video about Understanding Treaty 3"
-            allowfullscreen
-            class="video">
-          </iframe>
+          <figure>
+            <figcaption>
+              <a href="https://www.youtube.com/watch?v=ju-Zx2kDiGQ" target="_blank">
+                Click this link to watch the below video about MMIWG awareness for Treaty 3 on
+                YouTube.
+              </a>
+            </figcaption>
+            <iframe
+              width="650"
+              height="415"
+              src="https://www.youtube.com/embed/ju-Zx2kDiGQ"
+              title="YouTube video about MMIWG awareness for Youth by Youth "
+              allowfullscreen
+              class="video">
+            </iframe>
+          </figure>
+          <figure>
+            <figcaption>
+              <a href="https://www.youtube.com/watch?v=VpIr9eAnTLw" target="_blank">
+                Click this link to watch the below video The Anishinaabe Understanding of Treaty 3
+                on YouTube.
+              </a>
+            </figcaption>
+            <iframe
+              width="650"
+              height="415"
+              src="https://www.youtube.com/embed/VpIr9eAnTLw"
+              title="YouTube video about Understanding Treaty 3"
+              allowfullscreen
+              class="video">
+            </iframe>
+          </figure>
         </div>
       </section>
     </main>
