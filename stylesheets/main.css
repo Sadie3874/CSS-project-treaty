@@ -2,7 +2,7 @@
   Sadie Cutts
   Web development
   Mr. Hardman 
-  1/11/2023
+  1/16/2023
 
   Color theory 
   I chose the cream color as my main color because it shows goodness and humility treaties are about an 
@@ -45,13 +45,27 @@ body {
   color: #fefcf3;
 
   opacity: 0;
+  /* 
+  this defines our animation 
+           
+  we define the animation-name as fade-in
+  we define the animation-duration(how long the animation lasts) as 1 second.
+  we define the animation-timing-function (how the styling chages as it moves through the animation)
+  as ease-in, which means it will slowly start the animation and speed up to the end 
+  we define the animation delay as 2 seconds.
+  
+  Credit - Mr. Hardman (transitions and Animations) 
 
+*/
   -o-animation: fade-in 1s ease-in 2s forwards;
   -moz-animation: fade-in 1s ease-in 2s forwards;
   -webkit-animation: fade-in 1s ease-in 2s forwards;
 
   animation: fade-in 1s ease-in 2s forwards;
 
+  /* 
+  this is our prefixes they make sure that our web pages effects can be used across all different broswers and versions of the browsers  
+*/
   -webkit-transform: translate(-100px);
   -moz-transform: translate(-100px);
   -ms-transform: translate(-100px);
@@ -61,7 +75,19 @@ body {
   font-family: Georgia, "Times New Roman", Cambria, serif;
   font-size: 1.6rem;
 }
+/* 
+  this defines the animation itself. we use @keyframes to show that we are creating and 
+  amination and then we use the same name that we defines in the animation property(i.e., fade-in)
+  then, we define the starting point of the animation(from) and the styling at the starting point.
+  finally , we define the ending point of the animations(to) and the styling at the ending point.
+  you can also define %s of where differnet styling occurs(i.e., 0%,33%, 66%,100%). 
+  
+  Credit Mr. Hardman (transitions-and-animations) 
+*/
 
+/* 
+  this is our prefixes they make sure that our web pages effects can be used across all different broswers and versions of the browsers  
+*/
 @-webkit-keyframes fade-in {
   from {
     opacity: 0;
@@ -74,7 +100,9 @@ body {
     transform: translateY(0);
   }
 }
-
+/* 
+  this is our prefixes they make sure that our web pages effects can be used across all different broswers and versions of the browsers  
+*/
 @-moz-keyframes fade-in {
   from {
     opacity: 0;
@@ -87,7 +115,9 @@ body {
     transform: translateY(0);
   }
 }
-
+/* 
+  this is our prefixes they make sure that our web pages effects can be used across all different broswers and versions of the browsers  
+*/
 @-o-keyframes fade-in {
   from {
     opacity: 0;
@@ -117,25 +147,60 @@ body {
     transform: translateY(0);
   }
 }
+/* 
+  this defines our animation 
+           
+  we define the animation-name as grow
+  we define the animation-duration(how long the animation lasts) as 1 second.
+  we define the animation-fill-mode(whether the styling is kept at the end of the animation
+  or not) to forwards, which means to keep the styling that is at the end of the animation, 
+  in this case it will stay bigger until the mouse hovers away from it. 
 
+  Credit - Mr. Hardman (transitions and Animations) 
+
+*/
 .nav-link:hover {
   -webkit-animation-name: grow;
   -moz-animation-name: grow;
   -o-animation-name: grow;
   animation-name: grow;
 
+  -webkit-animation-fill-mode: forwards;
+
+  -moz-animation-fill-mode: forwards;
+
+  -o-animation-fill-mode: forwards;
+
+  animation-fill-mode: forwards;
+
   -webkit-animation-duration: 1s;
   -moz-animation-duration: 1s;
   -o-animation-duration: 1s;
   animation-duration: 1s;
 }
+/* 
+  this styles all elements in the nav to display in-line block (will display contnent horizontally insted of vertically).
+  and the nav will take up the whole website hense the 100% width and the background of the nav will be colored the primary color
+  of the webpage
 
+*/
 nav {
   display: inline-block;
   width: 100%;
   background-color: #815b5b;
 }
+/* 
+  this defines the animation itself. we use @keyframes to show that we are creating and 
+  amination and then we use the same name that we defines in the animation property(i.e., grow)
+  then, we define the starting point of the animation(from) and the styling at the starting point.
+  finally , we define the ending point of the animations(to) and the styling at the ending point.
+  
+  Credit Mr. Hardman (transitions-and-animations) 
+*/
 
+/* 
+  this is our prefixes they make sure that our web pages effects can be used across all different broswers and versions of the browsers  
+*/
 @-webkit-keyframes grow {
   from {
     -webkit-transform: scale(1);
@@ -150,7 +215,9 @@ nav {
     transform: scale(1.2);
   }
 }
-
+/* 
+  this is our prefixes they make sure that our web pages effects can be used across all different broswers and versions of the browsers  
+*/
 @-moz-keyframes grow {
   from {
     -webkit-transform: scale(1);
@@ -165,7 +232,9 @@ nav {
     transform: scale(1.2);
   }
 }
-
+/* 
+  this is our prefixes they make sure that our web pages effects can be used across all different broswers and versions of the browsers  
+*/
 @-o-keyframes grow {
   from {
     -webkit-transform: scale(1);
@@ -197,19 +266,14 @@ nav {
 }
 
 /*
-  this will style all list item elements in the nav to display so it has a block around it,
-  but also display inline with other list item elements,and have a margin of the block to be 5px 
-  the font size of the text to be 30px and padding of the element will be 2px
-
+  the nav li(ordered list) will make sure that the items in the nav li will display horisontally and not vertcally 
 */
-nav ul {
-  padding: 0;
-}
+
 nav li {
   display: inline-block;
 }
 /*
-  this will style all elements with this class to have a CSS box. 
+  this will style all elements with this class to have a CSS box model. 
   it will have a margin of 4px, and the border will be green and it is all around all the elements in the box
   the padding from the inner content at is will ve 4px away from the conent inside 
   the font size of all the content for text will be 1.8rem
@@ -225,10 +289,14 @@ nav li {
   font-size: 1.8rem;
   background-color: white;
 }
+
 /* 
-  nav li :focus,
-  nav li :hover {
-  background-color: #809249; 
+   the position property specifies the type of positioning methd used for the element,
+   the relateive positions the element to its normal position (credit - W3Schools). 
+   then we have the background size: cover, this makes it so the image will cover the whole webpage 
+   left and right top and bottem, to stop this image from becoming our background we gave it a height 
+   so it is only set for the top part of my website (vh stands for viewport height and it is like 
+   percentage unit, this will make up of 33vh of visable screen height. 
 */
 
 header {
@@ -243,10 +311,14 @@ header {
   height: 33vh;
 }
 
-header h1 {
-  /* Try to use transform: translate to center this vertically and horizontally */
+/* 
+  this transform property defines how much a element moves in each direction. 
+  this will make our heading in the middle of the image because it is positioned 
+  450px  to the right and 50% down on the webpage
+*/
 
-  -webkit-transform: translate(100px, 70%);
+header h1 {
+  -webkit-transform: translate(450px, 50%);
 
   -moz-transform: translate(450px, 50%);
 
@@ -258,11 +330,10 @@ header h1 {
 }
 
 /*
-  this will style all h1 if they dont have internal or inline styling.
-  the text will be in the center
-  the text will be colored #9e7676 
-  the text will be bolded to 600 
-  and the size of the text will be 3.2 rem which is 32px 
+  this is my h1 styling, fist my h1 will display horizontally and not vertially and that is the inline-block 
+  text align center will make sure the text will display ccenter and not somewhere else. the color of the text that will
+  display will be mostly black but have some brown in it. the boldness of the font will be 600 so it is begger then the h2 to show 
+  visual hierarchy and it will be 3.2 rech double then the h2 to also demonstrate visual hierarchy 
 */
 h1 {
   display: inline-block;
@@ -273,11 +344,12 @@ h1 {
 }
 
 /*
-  this will style all h2 is they dont have internal or inline styling
-  this will have all text to be centered 
-  the text will also be colored #815b5b (very light maroon)
-  the text will be bolded a little bit. only 400 
-  the font size is 2rem which is 32px
+  this is the h2, all my text will have a margin on top of 3% to make sure there is distance from the 
+  image and the h2. the text will also be in the center of the p tages below. the color of the text will be 
+  one of the primary colors because it is important info i want the useres to read first. the fontweight will 
+  make it bolder, and it is set 400. the h2 must be smaller thent the header so is 2.4rem to show visual hiearchy
+  and the font will be italic to chatch the users attention more and the words will be spaced 1mm part so 
+  it is easier to read. 
 */
 h2 {
   margin-top: 3%;
@@ -289,7 +361,8 @@ h2 {
   font-style: italic;
   word-spacing: 1mm;
 }
-/* this will make all un ordered lists to not have any bullit points, dashes etc.
+/* 
+  this will make all un ordered lists to not have any bullit points, dashes etc.
   it will also make all the text to be center in the element.
 */
 ul {
@@ -332,7 +405,6 @@ p {
   color: black;
   word-spacing: 1.2mm;
   background-color: white;
-  line-height: 25px;
 }
 /*
   this will style any elements with the class treaty-center 
@@ -362,6 +434,16 @@ div {
   display: inline-block;
 }
 
+.footer-links {
+  margin: 4px;
+  margin-right: 3px;
+  border: 2px solid #809249;
+  padding: 4px;
+
+  font-size: 1.8rem;
+  background-color: white;
+}
+
 /* 
   this makes the footer stay futher away from the video at the bottem of the page
 */
@@ -379,4 +461,6 @@ footer {
 
   float: left;
   border: 2px solid black;
+  margin-left: 2%;
+  width: 30%;
 }
