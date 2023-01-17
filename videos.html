@@ -52,13 +52,12 @@
 
         <h2 style="text-align: center; text-decoration: underline">Videos</h2>
         <!--
-          will display the video.
-          it will display a width of 650
-          and have a height of 415 
-          the src will let the user open the video 
-          i also named the title of the video so users will know what is it called  
-          it also has a class that will have it float left and have a border color of black and have a margin of 4px 
-          it will also have a border of 2px that is black  
+          figcaption is the link for people to click to go right to youtube so that when you click the link 
+          you wont watch it on the website but on youtube instead and it will be on a we tab because you 
+          dont want the user to leave your website so it has a target _blank
+          the iframe - the src is where i found the youtube video and it would be found in the url
+          in youtube. it has also a title so people with screen readers know what it is, it also has a class of video 
+          and the styling in the main.css for that class will display on the website 
         -->
         <figure>
           <figcaption>
@@ -70,12 +69,18 @@
           <iframe
             src="https://www.youtube.com/embed/I5rHJzenBds"
             title="YouTube video about Health Transformation for Treaty 3"
-            class="video"
             allowfullscreen
             class="video">
           </iframe>
         </figure>
-
+        <!--
+          figcaption is the link for people to click to go right to youtube so that when you click the link 
+          you wont watch it on the website but on youtube instead and it will be on a we tab because you 
+          dont want the user to leave your website so it has a target _blank
+          the iframe - the src is where i found the youtube video and it would be found in the url
+          in youtube. it has also a title so people with screen readers know what it is, it also has a class of video 
+          and the styling in the main.css for that class will display on the website 
+        -->
         <figure>
           <figcaption>
             <a href="https://www.youtube.com/watch?v=yjgW8FlsMGU" target="_blank">
@@ -90,7 +95,14 @@
             class="video">
           </iframe>
         </figure>
-
+        <!--
+          figcaption is the link for people to click to go right to youtube so that when you click the link 
+          you wont watch it on the website but on youtube instead and it will be on a we tab because you 
+          dont want the user to leave your website so it has a target _blank
+          the iframe - the src is where i found the youtube video and it would be found in the url
+          in youtube. it has also a title so people with screen readers know what it is, it also has a class of video 
+          and the styling in the main.css for that class will display on the website 
+        -->
         <figure>
           <figcaption>
             <a href="https://www.youtube.com/watch?v=ju-Zx2kDiGQ" target="_blank">
@@ -105,6 +117,14 @@
             class="video">
           </iframe>
         </figure>
+        <!--
+          figcaption is the link for people to click to go right to youtube so that when you click the link 
+          you wont watch it on the website but on youtube instead and it will be on a we tab because you 
+          dont want the user to leave your website so it has a target _blank
+          the iframe - the src is where i found the youtube video and it would be found in the url
+          in youtube. it has also a title so people with screen readers know what it is, it also has a class of video 
+          and the styling in the main.css for that class will display on the website 
+        -->
         <figure>
           <figcaption>
             <a href="https://www.youtube.com/watch?v=VpIr9eAnTLw" target="_blank">
@@ -122,9 +142,13 @@
       </section>
     </main>
     <footer>
-      <h2 style="color: #815b5b; text-align: center; font-weight: 800" id="footer-heading">
-        References
-      </h2>
+      <!--
+        this is inline styling. this will be styled different then the other h2's, this will have the color of 
+        #815b5b and the text will be in the center of the screen and be bolded(800) it also has an hr which stands for 
+        horizontal Rule, this will display a line on the website that is a darker color then the h2 and will be 
+        2px wide.  
+      -->
+      <h2 style="color: #815b5b; text-align: center; font-weight: 800">References</h2>
       <hr style="color: #594545; border: 2px solid" />
       <ul>
         <!--
@@ -132,21 +156,34 @@
           have a box around them with a white background and a green border around it   
         -->
         <li>
-          <a href="http://gct3.ca/our-nation/" class="nav-link">Grand Council Treaty 3 </a>
+          <a href="http://gct3.ca/our-nation/" class="footer-links" target="_blank"
+            >Grand Council Treaty 3
+          </a>
         </li>
         <li>
-          <a href="https://www.thecanadianencyclopedia.ca/en/article/treaty-3 " class="nav-link"
+          <a
+            href="https://www.thecanadianencyclopedia.ca/en/article/treaty-3 "
+            class="footer-links"
+            target="_blank"
             >Treaty 3-Canadian Encyclopedia
           </a>
         </li>
         <li>
           <a
             href="https://www.thecanadianencyclopedia.ca/en/article/numbered-treaties"
-            class="nav-link"
+            class="footer-links"
+            target="_blank"
             >Numbered Treaties-Canadian Encyclopedia
           </a>
         </li>
       </ul>
+      <!--
+         the copy right symbol will stop anyone from taking ownership of this website. it is styled 
+         with inline styling and displays center with a margin left and right of 2px this is so that 
+         there is space between the edges of the website, it will have padding of 30 on the top of the element 
+         and at the bottom. &#169 is to display the copy right symbol, we use this because our key bords dont have 
+         the copy right logo theses are called entities. 
+      -->
       <p
         style="
           text-align: center;
