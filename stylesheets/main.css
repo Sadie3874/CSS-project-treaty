@@ -2,7 +2,7 @@
   Sadie Cutts
   Web development
   Mr. Hardman 
-  1/16/2023
+  1/17/2023
 
   Color theory 
   I chose the cream color as my main color because it shows goodness and humility treaties are about an 
@@ -362,8 +362,11 @@ h2 {
   word-spacing: 1mm;
 }
 /* 
-  this will make all un ordered lists to not have any bullit points, dashes etc.
-  it will also make all the text to be center in the element.
+  this is the nav ul(unordered list), it will give the nav space around it, 
+  it will have margin 30pc top and bottom, this gives a nice bigger look to the nav. 
+  the list-style-type: none is to make it so that the nav elements are not decorated 
+  Ex. the list items, buletpoints etc. and the elemets will display center of the 
+  screen 
 */
 ul {
   margin-top: 30px;
@@ -372,27 +375,27 @@ ul {
   list-style-type: none;
   text-align: center;
 }
+/* 
+  this is the Li(list items) and it will display inline-block so it is horizontal and not vertical
+*/
 li {
   display: inline-block;
 }
+/* 
+  this is my anchor tag, and it will display with the my primary color #815b5b
+*/
 a {
   color: #815b5b;
 }
 p {
   /*
-    this will style all paragrph tags if they have no internal or inline styles. 
-    all the text will be aligned to the center of the element. 
-    it will have a border of 3px and will be green 
-    the element will have 2px of margin to the top of the element.
-    the element will also have a margin to the left as 35% and to the right of 5% so it will be displayed to the right of the website
-    the element will have a padding of 3% surrounding all the text inside the element 
-    the element will border redius of 4px, so it will round all borders of the element 
-    the text if the element will be black and it will display on webkit and moz too because some 
-    web broswers dont support this but by adding those it will display like that so it doesnt
-    take any accessabilty or any info from the website. 
-    all the elements words will be 1.2mm apart so it is easier to read. 
-    the background of the element will be white so it can be read easier. 
-  */
+  this will style all my p (paragraph) tags. they will display in the enter and have a border 
+  3px wide and the border will be styled green(#809249) the text will diplay 2px form the top 
+  and be 45% to the left of the screen(this is for liquid layout) and will be 3% from the right 
+  to give it some space, the padding of the element will be 3%, and then you have the border radius 
+  this will make the corners or the outer edge of the element, the text will display black and 
+  the words will be spaced 1.2mm apart so it is easier to read and they will have a bckground color of white. 
+*/
   text-align: center;
   border: 3px solid #809249;
   margin-top: 2px;
@@ -426,14 +429,19 @@ span {
   text-decoration: underline;
 }
 
-/* 
-  stays in the same line as the code  
-*/
+/* this will make it so any divs will display horizontally insted of vertically  */
 
 div {
   display: inline-block;
 }
-
+/* 
+  this is my class footer-link, this will make all my footer sources display
+  with a margin or 4px and have a distance between each other(margin right) of 3px
+  and the border will be green and be 2px wide. and the padding around it will be 4px  
+  the size of the font will be 1.8 cause it we need to display visual hierarchy and 
+  the links are not as imporant then the info of the website. and to make it easier to read
+  the background will be white.
+*/
 .footer-links {
   margin: 4px;
   margin-right: 3px;
@@ -445,7 +453,8 @@ div {
 }
 
 /* 
-  this makes the footer stay futher away from the video at the bottem of the page
+  this makes the footer stay futher away from the video at the bottem of the page and 
+  have 30px away from the main tags 
 */
 footer {
   clear: both;
@@ -453,12 +462,11 @@ footer {
 }
 
 /* 
-  this will style any elements that have this class to float left on the website
-  and have a border of 2px and black 
- */
+  the elements will be on the left side of the page and will have a border that is black 
+  with 2px width. it will display 2% from the left of the website and it will take up 30%  
+  of the website. 
+*/
 .floated-left {
-  color: #815b5b;
-
   float: left;
   border: 2px solid black;
   margin-left: 2%;
