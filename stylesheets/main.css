@@ -147,37 +147,7 @@ body {
     transform: translateY(0);
   }
 }
-/* 
-  this defines our animation 
-           
-  we define the animation-name as grow
-  we define the animation-duration(how long the animation lasts) as 1 second.
-  we define the animation-fill-mode(whether the styling is kept at the end of the animation
-  or not) to forwards, which means to keep the styling that is at the end of the animation, 
-  in this case it will stay bigger until the mouse hovers away from it. 
 
-  Credit - Mr. Hardman (transitions and Animations) 
-
-*/
-.nav-link:hover {
-  -webkit-animation-name: grow;
-  -moz-animation-name: grow;
-  -o-animation-name: grow;
-  animation-name: grow;
-
-  -webkit-animation-fill-mode: forwards;
-
-  -moz-animation-fill-mode: forwards;
-
-  -o-animation-fill-mode: forwards;
-
-  animation-fill-mode: forwards;
-
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -o-animation-duration: 1s;
-  animation-duration: 1s;
-}
 /* 
   this styles all elements in the nav to display in-line block (will display contnent horizontally insted of vertically).
   and the nav will take up the whole website hense the 100% width and the background of the nav will be colored the primary color
@@ -188,81 +158,6 @@ nav {
   display: inline-block;
   width: 100%;
   background-color: #815b5b;
-}
-/* 
-  this defines the animation itself. we use @keyframes to show that we are creating and 
-  amination and then we use the same name that we defines in the animation property(i.e., grow)
-  then, we define the starting point of the animation(from) and the styling at the starting point.
-  finally , we define the ending point of the animations(to) and the styling at the ending point.
-  
-  Credit Mr. Hardman (transitions-and-animations) 
-*/
-
-/* 
-  this is our prefixes they make sure that our web pages effects can be used across all different broswers and versions of the browsers  
-*/
-@-webkit-keyframes grow {
-  from {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1);
-  }
-  to {
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-}
-/* 
-  this is our prefixes they make sure that our web pages effects can be used across all different broswers and versions of the browsers  
-*/
-@-moz-keyframes grow {
-  from {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1);
-  }
-  to {
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-}
-/* 
-  this is our prefixes they make sure that our web pages effects can be used across all different broswers and versions of the browsers  
-*/
-@-o-keyframes grow {
-  from {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1);
-  }
-  to {
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-}
-
-@keyframes grow {
-  from {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1);
-  }
-  to {
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    transform: scale(1.2);
-  }
 }
 
 /*
@@ -288,6 +183,40 @@ nav li {
 
   font-size: 1.8rem;
   background-color: white;
+
+  -webkit-transition: -webkit-transform 1s;
+
+  transition: -webkit-transform 1s;
+
+  -o-transition: -o-transform 1s;
+
+  -moz-transition: transform 1s, -moz-transform 1s;
+
+  transition: transform 1s;
+
+  transition: transform 1s, -webkit-transform 1s, -moz-transform 1s, -o-transform 1s;
+}
+
+/* 
+  this defines our animation 
+           
+  we define the animation-name as grow
+  we define the animation-duration(how long the animation lasts) as 1 second.
+  we define the animation-fill-mode(whether the styling is kept at the end of the animation
+  or not) to forwards, which means to keep the styling that is at the end of the animation, 
+  in this case it will stay bigger until the mouse hovers away from it. 
+
+  Credit - Mr. Hardman (transitions and Animations) 
+
+*/
+.nav-link:hover,
+.nav-link:focus {
+  /* Remember Mr. Hardman, we did not actually cover scale as a transition. */
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 /* 
@@ -312,21 +241,42 @@ header {
 }
 
 /* 
-  this transform property defines how much a element moves in each direction. 
-  this will make our heading in the middle of the image because it is positioned 
-  450px  to the right and 50% down on the webpage
+  this is my header and it is a h1 tag, the text has a width of 60% and is positioned absolute, this means 
+  it will be styled the same way as the nearest ancestor or if there is no ancestor it will use the document body 
+  and will move along with the page(credit - W3schools) the top between the nav will be 8% and will be moved 
+  to the left by 50% and the transform protery the coordinate define 
+  how much an element will move in each direction, in this case it will be -50 so it will be in the middle of the website 
+  the padding around the element will be 0.5% on the top and the bottom and 1% on both left and right. so we can see the 
+  text if we change the size of the page we made a background color white
 */
 
 header h1 {
-  -webkit-transform: translate(450px, 50%);
+  width: 60%;
 
-  -moz-transform: translate(450px, 50%);
+  position: absolute;
+  top: 8%;
+  left: 50%;
 
-  -ms-transform: translate(450px, 50%);
+  -webkit-transform: translateX(-50%);
 
-  -o-transform: translate(450px, 50%);
+  -moz-transform: translateX(-50%);
 
-  transform: translate(450px, 50%);
+  -ms-transform: translateX(-50%);
+
+  -o-transform: translateX(-50%);
+
+  transform: translateX(-50%);
+
+  padding: 0.5% 1%;
+
+  background-color: white;
+}
+/* 
+  this makes it so the website will use 95% of the space, this is liquid layout and it uses 
+  percentage based sizes 
+*/
+main {
+  margin: 0 2.5%;
 }
 
 /*
