@@ -2,7 +2,7 @@
   Sadie Cutts
   Web development
   Mr. Hardman 
-  1/17/2023
+  1/18/2023
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -13,16 +13,22 @@
     <link rel="stylesheet" href="stylesheets/main.css" />
     <title>Treaty 3</title>
     <style>
-      .align {
+      #align {
         display: inline;
       }
-      #middle {
+      .middle {
         margin-left: 40%;
       }
     </style>
   </head>
 
   <body>
+    <!--
+      this is my heading, and also my links, links should be 
+      consitant through out all webpages, they also have the titles and a 
+      class of nav-link. the nav link will style these a certain way based on what has been coded in the 
+      main.css
+    -->
     <nav>
       <ul>
         <ul>
@@ -49,8 +55,14 @@
           alt="A map of all 11 treaties accross Canada"
           class="floated-left" />
 
-        <div class="align">
-          <h2 id="middle">What is a Treaty?</h2>
+        <div id="align">
+          <!--
+            this is my text/info about treaties, it has a class in it, and the class 
+            makes it so the text will display on the right of the element, you can see this class in the 
+            syle tag at the top of the webpage, this will be lnternal styling. the paragraph tag
+            will display my text and it will have some external styling found in the main.css. 
+          -->
+          <h2 class="middle">What is a Treaty?</h2>
 
           <p>
             A treaty is an agreement between nations, In Canada it is an agreement between the
@@ -62,7 +74,13 @@
       </section>
 
       <section>
-        <h2 id="middle">The Numbered Treaties</h2>
+        <!--
+            this is my text/info about treaties, it has a class in it, and the class 
+            makes it so the text will display on the right of the element, you can see this class in the 
+            syle tag at the top of the webpage, this will be lnternal styling. the paragraph tag
+            will display my text and it will have some external styling found in the main.css. 
+        -->
+        <h2 class="middle">The Numbered Treaties</h2>
         <p>
           The numbered treaties are 11 treaties that stretch from Ontario to British Columbia. The
           numbered Treaties are agreements between the Indigenous peoples and the Crown. The
@@ -70,7 +88,11 @@
           and fishing tools, annual salary, farming supplies, land etc.
         </p>
       </section>
-
+      <!--
+          this is my image of all the treaties in Canada. the alt text make sure that blind or vision impared people 
+          can still understand what the image is even if they cant see it. The image also has a class so it will be moved
+          to the left of the page and any other styling it may have in the main.css. 
+        -->
       <img
         src="image/Treaty-medal-web.jpg"
         alt="the metals to commemorate the agreements in the treaties, this image shows a 
@@ -78,7 +100,13 @@
         class="floated-left" />
 
       <section>
-        <h2 id="middle">Points of View</h2>
+        <!--
+            this is my text/info about treaties, it has a class in it, and the class 
+            makes it so the text will display on the right of the element, you can see this class in the 
+            syle tag at the top of the webpage, this will be lnternal styling. the paragraph tag
+            will display my text and it will have some external styling found in the main.css. 
+          -->
+        <h2 class="middle">Points of View</h2>
         <p>
           An important thing to know is that the Crown and the Indigenous people viewed Treaties
           very differently, to the Indigenous people they saw the treaties as an agreement between
@@ -101,8 +129,10 @@
       <ul>
         <!--
           this is the references i used for the web page. they have a class that will style them to 
-          have a box around them with a white background and a green border around it   
-        -->
+          have a box around them with a white background and a green border around it, and any other styling i coded 
+          in the main.css. the target=_blank is used so that when the user is clicking the link the link will
+          open in a new tab and not on your websites page 
+       -->
         <li>
           <a href="http://gct3.ca/our-nation/" class="footer-links" target="_blank"
             >Grand Council Treaty 3

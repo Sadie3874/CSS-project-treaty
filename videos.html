@@ -2,7 +2,7 @@
   Sadie Cutts
   Web development
   Mr. Hardman 
-  1/17/2023
+  1/18/2023
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -13,14 +13,24 @@
     <link rel="stylesheet" href="stylesheets/main.css" />
     <title>Videos</title>
     <style>
+      /* 
+        this will style the figure tags, this will style my videos to
+        have the text will display inline(horizontal) and 
+        not vertical. the width of the figure tags will be 45% because 
+        we want the liquid layout so the video will change sizes if the webpage 
+        is shinking or growing bigger. the margin will also be 2%. 
+      */
       figure {
         display: inline-block;
         width: 45%;
         margin: 2%;
       }
-      .align {
-        display: inline;
-      }
+      /* 
+        in the video class all the videos link text will be in the center of the video,(displayed 
+        at the top of the video). the width of the videos will be 100% so that the text will
+        not spill over the videos and that they will be aligned together.the aspect ratio 
+        is how the video will be displayed, the 16 is the width of the video and the 9 is the height.
+      */
       .video {
         text-align: center;
         width: 100%;
@@ -30,6 +40,12 @@
   </head>
 
   <body>
+    <!--
+      this is my heading, and also my links, links should be 
+      consitant through out all webpages, they also have the titles and a 
+      class of nav-link. the nav link will style these a certain way based on what has been coded in the 
+      main.css
+    -->
     <nav>
       <ul>
         <ul>
@@ -41,6 +57,9 @@
     </nav>
 
     <header>
+      <!--
+        this is my header, it will display on each webpage so the users know what the website is about 
+      -->
       <h1>Treaty 3 of Protection and Preservation</h1>
     </header>
     <main>
@@ -153,7 +172,9 @@
       <ul>
         <!--
           this is the references i used for the web page. they have a class that will style them to 
-          have a box around them with a white background and a green border around it   
+          have a box around them with a white background and a green border around it, and any other styling i coded 
+          in the main.css. the target=_blank is used so that when the user is clicking the link the link will
+          open in a new tab and not on your websites page.
         -->
         <li>
           <a href="http://gct3.ca/our-nation/" class="footer-links" target="_blank"
